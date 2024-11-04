@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="intermediat task.css">
+    <link rel="stylesheet" href="task2Basic.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar  nav-height" id="home">
+        <ul class="nav visibility">
+            <div class="logo">
+                <img src="images/Black_Illustrated_School_Logo-removebg-preview.png" id="home">
+            </div>
+            <li> <a href="task1Basic.html">Home </a> </li>
+            <li> <a href="#services">Services</a> </li>
+            <li> <a href="#about">About Us</a> </li>
+            <li> <a href="#contact">Contact Us</a> </li>
+            
+        </ul>
+        <div class="right visibility">
+            <!-- <input type="text" name="search" id="search" placeholder="search here"> -->
+            <button class="btn btn-sm">Login</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+     <!-- Form Section -->
+      <div class="form-style">
+     <form id="userForm" class="style-form" >
+        <label for="name">Name:</label>
+        <input type="text" id="name" required placeholder="Enter Your Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required  placeholder="Enter Your Email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="6" required placeholder="Enter Your Password"><br><br>
+        <label for="message">Message:</label>
+        <textarea name="text" id="text-area" placeholder="Type Your Message Here"></textarea><br><br>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Welcome to YoungDev Interns Family</p>
+            </div>
+        </div>
+        <button id="modalBtn" class="btn-dark" >Submit</button>
+    </form>
+</div>
+    <!-- Modal Section -->
+    
+
+
+    <script src="intermediat task.js"></script>
+    <script src="task.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+:root{
+    --font-family:"Poppins", sans-serif ;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0px;
+    padding: 0;
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+.form-style{
+    width: 40%; /* Or any specific width */
+    margin: 30px auto;
+    padding: 50px 20px;
+    height: 500px;
+    background-color:rgb(221, 221, 221) ;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.2);
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    text-align: center;
+    background-color: #ff3131;
+    color: white;
+}
+.style-form label{
+    font-family: var(font-family);
+    color: black;
+    font-weight: 500;
+}
+.style-form input{
+    border-radius: 5px;
+    border: 0;
+}
+.style-form textarea{
+        max-width: 400px;
+        margin: auto;
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        height: 80px;
+        border-radius: 5px;
+        border: 0;
+    
+}
+.btn-dark{
+    width: 50%;
+    height: 40px ;
+    letter-spacing: 3px;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 5px;
+}
+.btn-dark:hover{
+    background-color:#ff3131;
+    color: white;
+    border: none;
+
+}
+.modal-content {
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: -30px;
+    right: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
